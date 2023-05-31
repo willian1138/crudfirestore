@@ -46,8 +46,11 @@ app.post("/cadastrar", function(req, res){
         origem: req.body.origem,
         data_contato: req.body.data_contato,
         observacao: req.body.observacao
-    })
+    }).then(function(){
     console.log('Added document');
+    res.redirect('/')   
+    })
+    
 })
 
     app.listen(8081, function(){
