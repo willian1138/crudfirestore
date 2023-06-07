@@ -60,7 +60,7 @@ app.get("/consulta", function(req, res){
     .then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
     const dados = doc.data();
-    console.log(dados);
+    console.log(dados);     // RETORNO OS DADOS NO CONSOLE
     });
 }).catch((error) => {
     console.error('Erro ao ler dados da coleção:', error);
