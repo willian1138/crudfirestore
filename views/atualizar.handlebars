@@ -12,7 +12,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
+                            <a class="nav-link active" aria-current="page" href="/">Atualizar</a>
                             <a class="nav-link" href="/consulta">Consultar</a>
                         </div>
                     </div>
@@ -39,10 +39,10 @@
             &nbsp;
         </div>
         <div class="col bg-white">
-            <p class="text-start fs-5">Cadastrar - Agendamento de Potenciais Clientes</p>
+            <p class="text-start fs-5">Atualizar - Agendamento de Potenciais Clientes</p>
             <p class="text-start fs-6">Sistema Utilizado para agendamento de serviços.</p>
             <p>
-                <form action="/cadastrar" method="POST">
+                <form action="/atualizar" method="POST">
                     <div class="mb-3 text-start">
                         <label class="form-label">Nome:</label>
                         <input type="name" name="nome" class="form-control" id="nome">
@@ -68,13 +68,9 @@
                         <textarea name="observacao" class="form-control" placeholder="" id="observacao" style="height: 100px"></textarea>
                     </div>
                     <div class="mb-3 text-start">
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" class="btn btn-primary">Atualizar</button>
                     </div>
                 </form>
-                <br>
-                <form action="/deletar" method="POST">
-                <input type="submit" value="deletar">
-                <br>
             </p>
         </div>
         <div class="col-1">
